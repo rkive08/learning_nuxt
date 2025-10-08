@@ -2,7 +2,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
   const token = useCookie('token')
 
   // daftar halaman publik yang bisa diakses tanpa login
-  const publicPages = ['/login']
+  const publicPages = ['/login', '/forgot-password', '/reset-password']
 
   if (!token.value && !publicPages.includes(to.path)) {
     return navigateTo('/login')

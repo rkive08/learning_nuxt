@@ -33,7 +33,7 @@
         <div v-if="error" class="text-red-500 text-sm">{{ error }}</div>
 <br>
         <div class="text-right">
-         <NuxtLink to="#" class="text-sm text-blue-600 hover:underline">
+         <NuxtLink to="/forgot-password" class="text-sm text-blue-600 hover:underline">
   Forgot password?
 </NuxtLink>
         </div>
