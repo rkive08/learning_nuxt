@@ -51,7 +51,9 @@
 </template>
 
 <script setup lang="ts">
-
+definePageMeta({
+  layout: 'auth',
+})
 import { ref } from 'vue'
 import { useAuth } from '~/composables/auth/useAuth'
 
